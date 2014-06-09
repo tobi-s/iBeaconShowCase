@@ -7,6 +7,7 @@
 //
 
 #import "ProductsTableViewController.h"
+#import "ProductItem.h"
 
 @interface ProductsTableViewController ()
 
@@ -32,7 +33,25 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+    [self initProductData];
 }
+
+-(void)initProductData
+{
+    NSNumber *n1 = [NSNumber numberWithInt:8];
+    NSNumber *n2 = [NSNumber numberWithInt:10];
+    NSNumber *n3 = [NSNumber numberWithInt:12];
+    
+    
+    ProductItem *i1 = [[ProductItem alloc] initWithContent:@"TestProduct" andImage:@"cart.png" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -46,8 +65,12 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     NSLog(@"Prepare for Segue!");
-    
     NSLog(@"%@", segue.identifier);
+    
+    
+    
+    
+    
     
 }
 

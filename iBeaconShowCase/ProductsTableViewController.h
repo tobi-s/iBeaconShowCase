@@ -10,4 +10,10 @@
 
 @interface ProductsTableViewController : UITableViewController
 
+@property NSMutableArray *hotDrinksProductItems;
+@property NSMutableArray *coldDrinksProductItems;
+
+@property NSMutableArray *foodsProductItems;
+@property NSMutableArray *giftsProductItems;
+
 @end

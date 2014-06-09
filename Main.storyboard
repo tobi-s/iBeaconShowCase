@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Products-->
+        <!--Products Table View Controller - Products-->
         <scene sceneID="tGh-G4-ALv">
             <objects>
-                <tableViewController id="eO8-Ed-Iwb" sceneMemberID="viewController">
+                <tableViewController id="eO8-Ed-Iwb" customClass="ProductsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r6H-ag-8SD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HXg-9f-Kgd" kind="push" id="R5a-ps-7Uc"/>
+                                            <segue destination="HXg-9f-Kgd" kind="push" identifier="hot_drinks" id="R5a-ps-7Uc"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="112" id="NtR-hP-9wA">
@@ -72,7 +72,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HXg-9f-Kgd" kind="push" id="Col-Tf-mdv"/>
+                                            <segue destination="HXg-9f-Kgd" kind="push" identifier="cold_drinks" id="Col-Tf-mdv"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="112" id="YGu-3W-eqo">
@@ -102,7 +102,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HXg-9f-Kgd" kind="push" id="k2v-v7-bFK"/>
+                                            <segue destination="HXg-9f-Kgd" kind="push" identifier="food" id="k2v-v7-bFK"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="112" id="9sp-EH-Yiu">
@@ -132,7 +132,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HXg-9f-Kgd" kind="push" id="tfW-bb-uHm"/>
+                                            <segue destination="HXg-9f-Kgd" kind="push" identifier="gifts" id="tfW-bb-uHm"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="2004" y="-255"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Item Table View Controller-->
         <scene sceneID="p8I-8O-ukq">
             <objects>
-                <tableViewController id="HXg-9f-Kgd" sceneMemberID="viewController">
+                <tableViewController id="HXg-9f-Kgd" customClass="AddItemTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ghA-eC-PP8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,6 +279,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="R5a-ps-7Uc"/>
+        <segue reference="Col-Tf-mdv"/>
     </inferredMetricsTieBreakers>
 </document>

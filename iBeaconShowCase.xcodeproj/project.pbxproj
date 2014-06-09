@@ -19,6 +19,14 @@
 		5299CCAD1945D24900D10EF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC951945D24900D10EF5 /* UIKit.framework */; };
 		5299CCB51945D24900D10EF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCB31945D24900D10EF5 /* InfoPlist.strings */; };
 		5299CCB71945D24900D10EF5 /* iBeaconShowCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299CCB61945D24900D10EF5 /* iBeaconShowCaseTests.m */; };
+		5299CCC11945D29300D10EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC01945D29300D10EF5 /* Main.storyboard */; };
+		5299CCC41945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC31945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg */; };
+		5299CCC61945D7F700D10EF5 /* genting_starbucks_drinks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */; };
+		5299CCC81945D84100D10EF5 /* lemon_green_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC71945D84100D10EF5 /* lemon_green_tea.jpg */; };
+		5299CCCA1945D89200D10EF5 /* Refreshers-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC91945D89200D10EF5 /* Refreshers-2.jpg */; };
+		5299CCCC1945D93100D10EF5 /* Pumpkin_web.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */; };
+		5299CCCE1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */; };
+		5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCF1945E01700D10EF5 /* mugs.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,14 @@
 		5299CCB21945D24900D10EF5 /* iBeaconShowCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBeaconShowCaseTests-Info.plist"; sourceTree = "<group>"; };
 		5299CCB41945D24900D10EF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5299CCB61945D24900D10EF5 /* iBeaconShowCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconShowCaseTests.m; sourceTree = "<group>"; };
+		5299CCC01945D29300D10EF5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		5299CCC31945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tumblr_lhwteloYnL1qey5kvo1_500_large.jpg; sourceTree = "<group>"; };
+		5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = genting_starbucks_drinks.jpg; sourceTree = "<group>"; };
+		5299CCC71945D84100D10EF5 /* lemon_green_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lemon_green_tea.jpg; sourceTree = "<group>"; };
+		5299CCC91945D89200D10EF5 /* Refreshers-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Refreshers-2.jpg"; sourceTree = "<group>"; };
+		5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pumpkin_web.jpg; sourceTree = "<group>"; };
+		5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg"; sourceTree = "<group>"; };
+		5299CCCF1945E01700D10EF5 /* mugs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mugs.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +123,7 @@
 		5299CC971945D24900D10EF5 /* iBeaconShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				5299CCC01945D29300D10EF5 /* Main.storyboard */,
 				5299CCA01945D24900D10EF5 /* AppDelegate.h */,
 				5299CCA11945D24900D10EF5 /* AppDelegate.m */,
 				5299CCA31945D24900D10EF5 /* Images.xcassets */,
@@ -118,6 +135,7 @@
 		5299CC981945D24900D10EF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5299CCC21945D78200D10EF5 /* images */,
 				5299CC991945D24900D10EF5 /* iBeaconShowCase-Info.plist */,
 				5299CC9A1945D24900D10EF5 /* InfoPlist.strings */,
 				5299CC9D1945D24900D10EF5 /* main.m */,
@@ -142,6 +160,20 @@
 				5299CCB31945D24900D10EF5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5299CCC21945D78200D10EF5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5299CCCF1945E01700D10EF5 /* mugs.jpg */,
+				5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */,
+				5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */,
+				5299CCC91945D89200D10EF5 /* Refreshers-2.jpg */,
+				5299CCC71945D84100D10EF5 /* lemon_green_tea.jpg */,
+				5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */,
+				5299CCC31945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +251,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5299CCC11945D29300D10EF5 /* Main.storyboard in Resources */,
+				5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */,
 				5299CC9C1945D24900D10EF5 /* InfoPlist.strings in Resources */,
+				5299CCCE1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg in Resources */,
+				5299CCC61945D7F700D10EF5 /* genting_starbucks_drinks.jpg in Resources */,
+				5299CCC41945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg in Resources */,
+				5299CCC81945D84100D10EF5 /* lemon_green_tea.jpg in Resources */,
+				5299CCCA1945D89200D10EF5 /* Refreshers-2.jpg in Resources */,
 				5299CCA41945D24900D10EF5 /* Images.xcassets in Resources */,
+				5299CCCC1945D93100D10EF5 /* Pumpkin_web.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

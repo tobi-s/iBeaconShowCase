@@ -10,4 +10,6 @@
 
 @interface AddItemTableViewController : UITableViewController
 
+@property NSMutableArray *productItems;
+
 @end

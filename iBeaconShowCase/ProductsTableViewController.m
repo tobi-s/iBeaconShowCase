@@ -8,6 +8,7 @@
 
 #import "ProductsTableViewController.h"
 #import "ProductItem.h"
+#import "AddItemTableViewController.h"
 
 @interface ProductsTableViewController ()
 
@@ -44,11 +45,13 @@
     NSNumber *n2 = [NSNumber numberWithInt:10];
     NSNumber *n3 = [NSNumber numberWithInt:12];
     
+    NSMutableArray *array = [NSMutableArray new];
     
     ProductItem *i1 = [[ProductItem alloc] initWithContent:@"TestProduct" andImage:@"cart.png" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
     
+    [array addObject:i1];
     
-    
+    self.hotDrinksProductItems = array;
 }
 
 
@@ -67,10 +70,11 @@
     NSLog(@"Prepare for Segue!");
     NSLog(@"%@", segue.identifier);
     
+    AddItemTableViewController *addItemTableViewController = [segue destinationViewController];
     
+    addItemTableViewController.productItems = self.hotDrinksProductItems;
     
-    
-    
+    NSLog(@"Sending List with items: %lu", (unsigned long)[self.hotDrinksProductItems count]);
     
 }
 

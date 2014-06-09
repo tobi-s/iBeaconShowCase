@@ -27,6 +27,9 @@
 		5299CCCC1945D93100D10EF5 /* Pumpkin_web.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */; };
 		5299CCCE1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */; };
 		5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCF1945E01700D10EF5 /* mugs.jpg */; };
+		5299CCD21945E55100D10EF5 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCD11945E55100D10EF5 /* cart.png */; };
+		5299CCD41945E70900D10EF5 /* shopping-cart-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCD31945E70900D10EF5 /* shopping-cart-7@2x.png */; };
+		5299CCD61945E7B300D10EF5 /* coffee-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCD51945E7B300D10EF5 /* coffee-7@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pumpkin_web.jpg; sourceTree = "<group>"; };
 		5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg"; sourceTree = "<group>"; };
 		5299CCCF1945E01700D10EF5 /* mugs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mugs.jpg; sourceTree = "<group>"; };
+		5299CCD11945E55100D10EF5 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		5299CCD31945E70900D10EF5 /* shopping-cart-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart-7@2x.png"; sourceTree = "<group>"; };
+		5299CCD51945E7B300D10EF5 /* coffee-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-7@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,9 @@
 		5299CCC21945D78200D10EF5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5299CCD51945E7B300D10EF5 /* coffee-7@2x.png */,
+				5299CCD31945E70900D10EF5 /* shopping-cart-7@2x.png */,
+				5299CCD11945E55100D10EF5 /* cart.png */,
 				5299CCCF1945E01700D10EF5 /* mugs.jpg */,
 				5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */,
 				5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */,
@@ -253,9 +262,12 @@
 			files = (
 				5299CCC11945D29300D10EF5 /* Main.storyboard in Resources */,
 				5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */,
+				5299CCD41945E70900D10EF5 /* shopping-cart-7@2x.png in Resources */,
 				5299CC9C1945D24900D10EF5 /* InfoPlist.strings in Resources */,
+				5299CCD21945E55100D10EF5 /* cart.png in Resources */,
 				5299CCCE1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg in Resources */,
 				5299CCC61945D7F700D10EF5 /* genting_starbucks_drinks.jpg in Resources */,
+				5299CCD61945E7B300D10EF5 /* coffee-7@2x.png in Resources */,
 				5299CCC41945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg in Resources */,
 				5299CCC81945D84100D10EF5 /* lemon_green_tea.jpg in Resources */,
 				5299CCCA1945D89200D10EF5 /* Refreshers-2.jpg in Resources */,

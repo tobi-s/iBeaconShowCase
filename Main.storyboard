@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tGE-tc-6k7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qui-ZC-2aE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -147,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5e-qD-Wvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="-255"/>
+            <point key="canvasLocation" x="2004" y="-255"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="p8I-8O-ukq">
@@ -176,12 +176,42 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiZ-3v-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-255"/>
+            <point key="canvasLocation" x="2616" y="-255"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Table View Controller-->
+        <scene sceneID="PEz-6w-T5S">
+            <objects>
+                <tableViewController id="LaC-KQ-d4M" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="p1E-5i-jgD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="isj-ML-dpk">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="isj-ML-dpk" id="sq4-3J-j78">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LaC-KQ-d4M" id="o7n-40-AMm"/>
+                            <outlet property="delegate" destination="LaC-KQ-d4M" id="aVO-r8-R7o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="k7M-fJ-w8H"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="om4-wb-oqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="-961"/>
+        </scene>
+        <!--Navigation Controller - coffee and more-->
         <scene sceneID="ReZ-y5-9Py">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tGE-tc-6k7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="coffee and more" image="coffee-7.png" id="ZB6-6Q-A14"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9YV-o1-Jhx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -194,14 +224,54 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fb-rn-mCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="-266"/>
+            <point key="canvasLocation" x="1539" y="-266"/>
+        </scene>
+        <!--Navigation Controller - shopping-cart-->
+        <scene sceneID="R7P-0w-rKX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7wF-UN-Nvh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="shopping-cart" image="shopping-cart-7.png" id="ZHk-aH-TH7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tMJ-Ks-zUI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LaC-KQ-d4M" kind="relationship" relationship="rootViewController" id="2ut-7g-RzE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upB-4W-kd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="-961"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VrM-R1-OWF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qui-ZC-2aE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pzp-MZ-UHp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tGE-tc-6k7" kind="relationship" relationship="viewControllers" id="xPl-Fe-0dt"/>
+                        <segue destination="7wF-UN-Nvh" kind="relationship" relationship="viewControllers" id="h6V-po-3gY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGm-Vp-Yaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="-614"/>
         </scene>
     </scenes>
     <resources>
         <image name="6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg" width="484" height="363"/>
         <image name="Pumpkin_web.jpg" width="417" height="306"/>
+        <image name="coffee-7.png" width="30" height="30"/>
         <image name="genting_starbucks_drinks.jpg" width="1600" height="1200"/>
         <image name="mugs.jpg" width="225" height="225"/>
+        <image name="shopping-cart-7.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

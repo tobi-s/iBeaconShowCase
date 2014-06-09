@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddItemTableViewController : UITableViewController
+@interface AddItemTableViewController : UITableViewController{
+}
 
 @property NSMutableArray *productItems;
 

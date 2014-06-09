@@ -65,7 +65,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-mO-hcN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="refreshing_drinks.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-mO-hcN">
                                                     <rect key="frame" x="20" y="10" width="129" height="91"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -174,6 +174,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kmV-XC-Eh0" kind="modal" id="IKt-SW-RwB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -215,6 +218,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="om4-wb-oqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2530" y="-961"/>
+        </scene>
+        <!--Place Order View Controller-->
+        <scene sceneID="KL0-ag-f19">
+            <objects>
+                <viewController id="kmV-XC-Eh0" customClass="PlaceOrderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="osP-gV-vZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dfc-ll-baM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PM1-ue-SGp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-XB-Xxw">
+                                <rect key="frame" x="20" y="42" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your size:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2K-4U-ZUV">
+                                <rect key="frame" x="20" y="241" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-nP-atq">
+                                <rect key="frame" x="20" y="83" width="188" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9s-bA-f9B">
+                                <rect key="frame" x="20" y="270" width="280" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="productImage" destination="zEm-nP-atq" id="fiN-cC-2MZ"/>
+                        <outlet property="productItemLabel" destination="YIy-XB-Xxw" id="47x-YD-K36"/>
+                        <outlet property="productSizePickerView" destination="e9s-bA-f9B" id="4E7-ao-i8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hv9-Vr-vEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3105" y="-447"/>
         </scene>
         <!--Navigation Controller - coffee and more-->
         <scene sceneID="ReZ-y5-9Py">
@@ -275,11 +325,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg" width="484" height="363"/>
         <image name="Pumpkin_web.jpg" width="417" height="306"/>
         <image name="coffee-7.png" width="30" height="30"/>
         <image name="genting_starbucks_drinks.jpg" width="1600" height="1200"/>
         <image name="mugs.jpg" width="225" height="225"/>
+        <image name="refreshing_drinks.jpg" width="484" height="363"/>
         <image name="shopping-cart-7.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

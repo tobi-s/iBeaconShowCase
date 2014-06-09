@@ -20,12 +20,11 @@
 		5299CCB51945D24900D10EF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCB31945D24900D10EF5 /* InfoPlist.strings */; };
 		5299CCB71945D24900D10EF5 /* iBeaconShowCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299CCB61945D24900D10EF5 /* iBeaconShowCaseTests.m */; };
 		5299CCC11945D29300D10EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC01945D29300D10EF5 /* Main.storyboard */; };
-		5299CCC41945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC31945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg */; };
 		5299CCC61945D7F700D10EF5 /* genting_starbucks_drinks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */; };
 		5299CCC81945D84100D10EF5 /* lemon_green_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC71945D84100D10EF5 /* lemon_green_tea.jpg */; };
 		5299CCCA1945D89200D10EF5 /* Refreshers-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCC91945D89200D10EF5 /* Refreshers-2.jpg */; };
 		5299CCCC1945D93100D10EF5 /* Pumpkin_web.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */; };
-		5299CCCE1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */; };
+		5299CCCE1945DBF600D10EF5 /* refreshing_drinks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCD1945DBF600D10EF5 /* refreshing_drinks.jpg */; };
 		5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCCF1945E01700D10EF5 /* mugs.jpg */; };
 		5299CCD21945E55100D10EF5 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCD11945E55100D10EF5 /* cart.png */; };
 		5299CCD41945E70900D10EF5 /* shopping-cart-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5299CCD31945E70900D10EF5 /* shopping-cart-7@2x.png */; };
@@ -33,6 +32,15 @@
 		5299CCDC1945F09700D10EF5 /* AddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299CCDB1945F09700D10EF5 /* AddItemTableViewController.m */; };
 		5299CCDF1945F3E900D10EF5 /* ProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */; };
 		5299CCE21945F5AB00D10EF5 /* ProductItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299CCE11945F5AB00D10EF5 /* ProductItem.m */; };
+		52B1B6B419465027005BE0A7 /* caffe_latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B319465027005BE0A7 /* caffe_latte.jpg */; };
+		52B1B6B619465133005BE0A7 /* cappucino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B519465133005BE0A7 /* cappucino.jpg */; };
+		52B1B6B819465171005BE0A7 /* Espresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B719465171005BE0A7 /* Espresso.jpg */; };
+		52B1B6BA194651A1005BE0A7 /* vanilla_latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B9194651A1005BE0A7 /* vanilla_latte.jpg */; };
+		52B1B6BC19465267005BE0A7 /* caramel_machiato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6BB19465267005BE0A7 /* caramel_machiato.jpg */; };
+		52B1B6BE19465294005BE0A7 /* chai_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6BD19465294005BE0A7 /* chai_tea.jpg */; };
+		52B1B6C0194652CB005BE0A7 /* earl_grey_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6BF194652CB005BE0A7 /* earl_grey_tea.jpg */; };
+		52B1B6C2194652D0005BE0A7 /* chai_tea_latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6C1194652D0005BE0A7 /* chai_tea_latte.jpg */; };
+		52B1B6C519465551005BE0A7 /* PlaceOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +71,11 @@
 		5299CCB41945D24900D10EF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5299CCB61945D24900D10EF5 /* iBeaconShowCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconShowCaseTests.m; sourceTree = "<group>"; };
 		5299CCC01945D29300D10EF5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
-		5299CCC31945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tumblr_lhwteloYnL1qey5kvo1_500_large.jpg; sourceTree = "<group>"; };
 		5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = genting_starbucks_drinks.jpg; sourceTree = "<group>"; };
 		5299CCC71945D84100D10EF5 /* lemon_green_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lemon_green_tea.jpg; sourceTree = "<group>"; };
 		5299CCC91945D89200D10EF5 /* Refreshers-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Refreshers-2.jpg"; sourceTree = "<group>"; };
 		5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pumpkin_web.jpg; sourceTree = "<group>"; };
-		5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg"; sourceTree = "<group>"; };
+		5299CCCD1945DBF600D10EF5 /* refreshing_drinks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refreshing_drinks.jpg; sourceTree = "<group>"; };
 		5299CCCF1945E01700D10EF5 /* mugs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mugs.jpg; sourceTree = "<group>"; };
 		5299CCD11945E55100D10EF5 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
 		5299CCD31945E70900D10EF5 /* shopping-cart-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart-7@2x.png"; sourceTree = "<group>"; };
@@ -79,6 +86,16 @@
 		5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsTableViewController.m; sourceTree = "<group>"; };
 		5299CCE01945F5AB00D10EF5 /* ProductItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductItem.h; sourceTree = "<group>"; };
 		5299CCE11945F5AB00D10EF5 /* ProductItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductItem.m; sourceTree = "<group>"; };
+		52B1B6B319465027005BE0A7 /* caffe_latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caffe_latte.jpg; sourceTree = "<group>"; };
+		52B1B6B519465133005BE0A7 /* cappucino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cappucino.jpg; sourceTree = "<group>"; };
+		52B1B6B719465171005BE0A7 /* Espresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Espresso.jpg; sourceTree = "<group>"; };
+		52B1B6B9194651A1005BE0A7 /* vanilla_latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vanilla_latte.jpg; sourceTree = "<group>"; };
+		52B1B6BB19465267005BE0A7 /* caramel_machiato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caramel_machiato.jpg; sourceTree = "<group>"; };
+		52B1B6BD19465294005BE0A7 /* chai_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chai_tea.jpg; sourceTree = "<group>"; };
+		52B1B6BF194652CB005BE0A7 /* earl_grey_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earl_grey_tea.jpg; sourceTree = "<group>"; };
+		52B1B6C1194652D0005BE0A7 /* chai_tea_latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chai_tea_latte.jpg; sourceTree = "<group>"; };
+		52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOrderViewController.h; sourceTree = "<group>"; };
+		52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOrderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +158,8 @@
 				5299CCDA1945F09700D10EF5 /* AddItemTableViewController.h */,
 				5299CCDB1945F09700D10EF5 /* AddItemTableViewController.m */,
 				5299CCC01945D29300D10EF5 /* Main.storyboard */,
+				52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */,
+				52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */,
 				5299CCDD1945F3E900D10EF5 /* ProductsTableViewController.h */,
 				5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */,
 				5299CCE01945F5AB00D10EF5 /* ProductItem.h */,
@@ -186,16 +205,23 @@
 		5299CCC21945D78200D10EF5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				52B1B6C1194652D0005BE0A7 /* chai_tea_latte.jpg */,
+				52B1B6BF194652CB005BE0A7 /* earl_grey_tea.jpg */,
+				52B1B6BD19465294005BE0A7 /* chai_tea.jpg */,
+				52B1B6BB19465267005BE0A7 /* caramel_machiato.jpg */,
+				52B1B6B9194651A1005BE0A7 /* vanilla_latte.jpg */,
+				52B1B6B719465171005BE0A7 /* Espresso.jpg */,
+				52B1B6B519465133005BE0A7 /* cappucino.jpg */,
+				52B1B6B319465027005BE0A7 /* caffe_latte.jpg */,
 				5299CCD51945E7B300D10EF5 /* coffee-7@2x.png */,
 				5299CCD31945E70900D10EF5 /* shopping-cart-7@2x.png */,
 				5299CCD11945E55100D10EF5 /* cart.png */,
 				5299CCCF1945E01700D10EF5 /* mugs.jpg */,
-				5299CCCD1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg */,
+				5299CCCD1945DBF600D10EF5 /* refreshing_drinks.jpg */,
 				5299CCCB1945D93100D10EF5 /* Pumpkin_web.jpg */,
 				5299CCC91945D89200D10EF5 /* Refreshers-2.jpg */,
 				5299CCC71945D84100D10EF5 /* lemon_green_tea.jpg */,
 				5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */,
-				5299CCC31945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -275,19 +301,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B1B6B419465027005BE0A7 /* caffe_latte.jpg in Resources */,
+				52B1B6B619465133005BE0A7 /* cappucino.jpg in Resources */,
 				5299CCC11945D29300D10EF5 /* Main.storyboard in Resources */,
+				52B1B6BC19465267005BE0A7 /* caramel_machiato.jpg in Resources */,
 				5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */,
 				5299CCD41945E70900D10EF5 /* shopping-cart-7@2x.png in Resources */,
 				5299CC9C1945D24900D10EF5 /* InfoPlist.strings in Resources */,
 				5299CCD21945E55100D10EF5 /* cart.png in Resources */,
-				5299CCCE1945DBF600D10EF5 /* 6c77615c19a7ae3141edbaa035bd5ee93031cb3f9d719217934a27cbe35cf38c._UY363_CR0,0,484,363_.jpg in Resources */,
+				52B1B6BA194651A1005BE0A7 /* vanilla_latte.jpg in Resources */,
+				5299CCCE1945DBF600D10EF5 /* refreshing_drinks.jpg in Resources */,
+				52B1B6C2194652D0005BE0A7 /* chai_tea_latte.jpg in Resources */,
 				5299CCC61945D7F700D10EF5 /* genting_starbucks_drinks.jpg in Resources */,
+				52B1B6C0194652CB005BE0A7 /* earl_grey_tea.jpg in Resources */,
 				5299CCD61945E7B300D10EF5 /* coffee-7@2x.png in Resources */,
-				5299CCC41945D79900D10EF5 /* tumblr_lhwteloYnL1qey5kvo1_500_large.jpg in Resources */,
 				5299CCC81945D84100D10EF5 /* lemon_green_tea.jpg in Resources */,
 				5299CCCA1945D89200D10EF5 /* Refreshers-2.jpg in Resources */,
 				5299CCA41945D24900D10EF5 /* Images.xcassets in Resources */,
 				5299CCCC1945D93100D10EF5 /* Pumpkin_web.jpg in Resources */,
+				52B1B6BE19465294005BE0A7 /* chai_tea.jpg in Resources */,
+				52B1B6B819465171005BE0A7 /* Espresso.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +342,7 @@
 				5299CCDC1945F09700D10EF5 /* AddItemTableViewController.m in Sources */,
 				5299CCA21945D24900D10EF5 /* AppDelegate.m in Sources */,
 				5299CC9E1945D24900D10EF5 /* main.m in Sources */,
+				52B1B6C519465551005BE0A7 /* PlaceOrderViewController.m in Sources */,
 				5299CCDF1945F3E900D10EF5 /* ProductsTableViewController.m in Sources */,
 				5299CCE21945F5AB00D10EF5 /* ProductItem.m in Sources */,
 			);

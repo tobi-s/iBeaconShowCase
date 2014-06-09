@@ -8,10 +8,12 @@
 
 #import "AddItemTableViewController.h"
 #import "ProductItem.h"
+#import "PlaceOrderViewController.h"
 
 @interface AddItemTableViewController ()
 
 @end
+
 
 @implementation AddItemTableViewController
 
@@ -33,13 +35,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    NSLog(@"ViewDidLoad!");
-    NSLog(@"Size of productlist: %lu", (unsigned long)[self.productItems count]);
-    
-    for (ProductItem *i in self.productItems){
-        NSLog(@"Da: %@", i.itemName);
-    }
+  
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,8 +64,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"productCell" forIndexPath:indexPath];
     
     ProductItem *productItem = [self.productItems objectAtIndex:indexPath.row];
-    
     cell.textLabel.text = productItem.itemName;
+    
     
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     imgView.image = [UIImage imageNamed:productItem.imageName];
@@ -80,7 +76,18 @@
 }
 
 
-
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    NSIndexPath *i = [self.tableView indexPathForSelectedRow];
+        
+    PlaceOrderViewController *placeOrderViewController = [segue destinationViewController];
+    placeOrderViewController.productItem = [self.productItems objectAtIndex:i.row];
+    
+}
 
 
 

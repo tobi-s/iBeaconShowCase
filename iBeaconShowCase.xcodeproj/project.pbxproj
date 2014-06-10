@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		522B6FF81947202A00BEC85A /* cups_sizes.png in Resources */ = {isa = PBXBuildFile; fileRef = 522B6FF71947202A00BEC85A /* cups_sizes.png */; };
+		524B94501947A36500EDB2F9 /* ShoppingCartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */; };
 		5299CC921945D24900D10EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC911945D24900D10EF5 /* Foundation.framework */; };
 		5299CC941945D24900D10EF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC931945D24900D10EF5 /* CoreGraphics.framework */; };
 		5299CC961945D24900D10EF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC951945D24900D10EF5 /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		522B6FF71947202A00BEC85A /* cups_sizes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups_sizes.png; sourceTree = "<group>"; };
+		524B944E1947A36500EDB2F9 /* ShoppingCartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartTableViewController.h; sourceTree = "<group>"; };
+		524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartTableViewController.m; sourceTree = "<group>"; };
 		5299CC8E1945D24900D10EF5 /* iBeaconShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5299CC911945D24900D10EF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5299CC931945D24900D10EF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,8 @@
 				5299CCC01945D29300D10EF5 /* Main.storyboard */,
 				52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */,
 				52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */,
+				524B944E1947A36500EDB2F9 /* ShoppingCartTableViewController.h */,
+				524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */,
 				5299CCDD1945F3E900D10EF5 /* ProductsTableViewController.h */,
 				5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */,
 				5299CCE01945F5AB00D10EF5 /* ProductItem.h */,
@@ -347,6 +352,7 @@
 				5299CCA21945D24900D10EF5 /* AppDelegate.m in Sources */,
 				5299CC9E1945D24900D10EF5 /* main.m in Sources */,
 				52B1B6C519465551005BE0A7 /* PlaceOrderViewController.m in Sources */,
+				524B94501947A36500EDB2F9 /* ShoppingCartTableViewController.m in Sources */,
 				5299CCDF1945F3E900D10EF5 /* ProductsTableViewController.m in Sources */,
 				5299CCE21945F5AB00D10EF5 /* ProductItem.m in Sources */,
 			);

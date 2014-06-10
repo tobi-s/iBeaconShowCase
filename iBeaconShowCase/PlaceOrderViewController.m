@@ -7,6 +7,7 @@
 //
 
 #import "PlaceOrderViewController.h"
+#import "ShoppingCartTableViewController.h"
 
 @interface PlaceOrderViewController ()
 @end
@@ -49,6 +50,8 @@
     
     self.priceList = [[NSArray alloc] initWithObjects:tallString,grandeString, ventiString, nil];
     
+    [self.productSizePickerView selectRow:1 inComponent:0 animated:FALSE];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,8 +80,27 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    NSLog(@"Selected Row %ld", (long)row);
+    self.productItem.itemSize = [[NSNumber alloc] initWithInteger:row];
 }
+
+
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+
+     ShoppingCartTableViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"shoppingCartTVC"];
+     
+     NSString *newBadgeValue = [viewController addItemToCart:self.productItem];
+     
+     [[[[[self tabBarController] tabBar] items]
+       objectAtIndex:1] setBadgeValue:newBadgeValue];
+     
+ }
+
+
 
 
 @end

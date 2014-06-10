@@ -17,7 +17,7 @@
 @synthesize priceGrande;
 @synthesize priceVenti;
 
-- (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(NSString *)_itemSize andPriceTall:(NSNumber *)_priceTall andPriceGrande:(NSNumber *)_priceGrande andPriceVenti:(NSNumber *)_priceVenti{
+- (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(NSNumber *)_itemSize andPriceTall:(NSNumber *)_priceTall andPriceGrande:(NSNumber *)_priceGrande andPriceVenti:(NSNumber *)_priceVenti{
     self = [super init];
     if (self) {
                 itemName = _itemName;

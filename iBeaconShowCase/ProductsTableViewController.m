@@ -65,16 +65,18 @@
     NSNumber *n2 = [NSNumber numberWithInt:10];
     NSNumber *n3 = [NSNumber numberWithInt:12];
     
+    NSNumber *n4 = [NSNumber numberWithInt:1];
+    
     NSMutableArray *array = [NSMutableArray new];
     
-    ProductItem *i1 = [[ProductItem alloc] initWithContent:@"Caffè Latte" andImage:@"caffe_latte.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i2 = [[ProductItem alloc] initWithContent:@"Cappuccino" andImage:@"cappucino.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i3 = [[ProductItem alloc] initWithContent:@"Espresso" andImage:@"Espresso.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i4 = [[ProductItem alloc] initWithContent:@"Vanilla Latte" andImage:@"vanilla_latte.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i5 = [[ProductItem alloc] initWithContent:@"Caramel Macchiato" andImage:@"caramel_machiato.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i6 = [[ProductItem alloc] initWithContent:@"Chai Tea" andImage:@"chai_tea.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i7 = [[ProductItem alloc] initWithContent:@"Earl Grey Tea" andImage:@"earl_grey_tea.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
-    ProductItem *i8 = [[ProductItem alloc] initWithContent:@"Chai Tea Latte" andImage:@"chai_tea_latte.jpg" andSize:@"Tall" andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i1 = [[ProductItem alloc] initWithContent:@"Caffè Latte" andImage:@"caffe_latte.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i2 = [[ProductItem alloc] initWithContent:@"Cappuccino" andImage:@"cappucino.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i3 = [[ProductItem alloc] initWithContent:@"Espresso" andImage:@"Espresso.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i4 = [[ProductItem alloc] initWithContent:@"Vanilla Latte" andImage:@"vanilla_latte.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i5 = [[ProductItem alloc] initWithContent:@"Caramel Macchiato" andImage:@"caramel_machiato.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i6 = [[ProductItem alloc] initWithContent:@"Chai Tea" andImage:@"chai_tea.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i7 = [[ProductItem alloc] initWithContent:@"Earl Grey Tea" andImage:@"earl_grey_tea.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
+    ProductItem *i8 = [[ProductItem alloc] initWithContent:@"Chai Tea Latte" andImage:@"chai_tea_latte.jpg" andSize:n4 andPriceTall:n1 andPriceGrande:n2 andPriceVenti:n3];
     
     [array addObject:i1];
     [array addObject:i2];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522B6FF81947202A00BEC85A /* cups_sizes.png in Resources */ = {isa = PBXBuildFile; fileRef = 522B6FF71947202A00BEC85A /* cups_sizes.png */; };
 		5299CC921945D24900D10EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC911945D24900D10EF5 /* Foundation.framework */; };
 		5299CC941945D24900D10EF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC931945D24900D10EF5 /* CoreGraphics.framework */; };
 		5299CC961945D24900D10EF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC951945D24900D10EF5 /* UIKit.framework */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		522B6FF71947202A00BEC85A /* cups_sizes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups_sizes.png; sourceTree = "<group>"; };
 		5299CC8E1945D24900D10EF5 /* iBeaconShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5299CC911945D24900D10EF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5299CC931945D24900D10EF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -205,6 +207,7 @@
 		5299CCC21945D78200D10EF5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				522B6FF71947202A00BEC85A /* cups_sizes.png */,
 				52B1B6C1194652D0005BE0A7 /* chai_tea_latte.jpg */,
 				52B1B6BF194652CB005BE0A7 /* earl_grey_tea.jpg */,
 				52B1B6BD19465294005BE0A7 /* chai_tea.jpg */,
@@ -306,6 +309,7 @@
 				5299CCC11945D29300D10EF5 /* Main.storyboard in Resources */,
 				52B1B6BC19465267005BE0A7 /* caramel_machiato.jpg in Resources */,
 				5299CCD01945E01700D10EF5 /* mugs.jpg in Resources */,
+				522B6FF81947202A00BEC85A /* cups_sizes.png in Resources */,
 				5299CCD41945E70900D10EF5 /* shopping-cart-7@2x.png in Resources */,
 				5299CC9C1945D24900D10EF5 /* InfoPlist.strings in Resources */,
 				5299CCD21945E55100D10EF5 /* cart.png in Resources */,

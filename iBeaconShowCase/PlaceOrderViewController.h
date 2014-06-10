@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ProductItem.h"
 
-@interface PlaceOrderViewController : UIViewController
+@interface PlaceOrderViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *productItemLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;
@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *productSizePickerView;
 
 @property ProductItem *productItem;
+
+@property (strong, nonatomic) NSArray *priceList;
 
 @end

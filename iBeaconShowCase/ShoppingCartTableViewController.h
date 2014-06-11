@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ProductItem.h"
 #import "ShoppingCart.h"
+#import "AppDelegate.h"
 
 @interface ShoppingCartTableViewController : UITableViewController
 {
     ShoppingCart* shoppingCart;
+    AppDelegate *appDelegate;
 }
 
 

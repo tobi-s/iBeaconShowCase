@@ -95,7 +95,6 @@
      AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
      
      NSNumber *newBadgeValue = [appDelegate addItemToShoppingCartDelegate:self.productItem];
-     
 
      [[[[[self tabBarController] tabBar] items]
        objectAtIndex:1] setBadgeValue:[NSString stringWithFormat:@"%@", newBadgeValue]];

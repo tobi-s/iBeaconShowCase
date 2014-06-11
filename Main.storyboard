@@ -267,7 +267,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eO8-Ed-Iwb" kind="custom" id="YN2-io-b2F"/>
+                                    <segue destination="eO8-Ed-Iwb" kind="push" id="YN2-io-b2F"/>
                                 </connections>
                             </button>
                         </subviews>

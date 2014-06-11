@@ -33,9 +33,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-  
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    shoppingCart = appDelegate.shoppingCart;
+    appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    shoppingCart = [appDelegate shoppingCart];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +56,10 @@
     return [shoppingCart.shoppingCartItems count];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[self tableView] reloadData];
+}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -73,6 +76,17 @@
     cell.imageView.image = imgView.image;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [shoppingCart.shoppingCartItems removeObjectAtIndex:indexPath.row];
+    
+    NSString *newBadgeValue = [NSString stringWithFormat:@"%lu", (unsigned long)[shoppingCart.shoppingCartItems count]];
+    
+    [[[[[self tabBarController] tabBar] items]
+      objectAtIndex:1] setBadgeValue:newBadgeValue];
+    [tableView reloadData];
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "PlaceOrderViewController.h"
 #import "ShoppingCartTableViewController.h"
+#import "AppDelegate.h"
 
 @interface PlaceOrderViewController ()
 @end
@@ -90,13 +91,14 @@
  {
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
+     
+     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+     
+     NSNumber *newBadgeValue = [appDelegate addItemToShoppingCartDelegate:self.productItem];
+     
 
-     ShoppingCartTableViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"shoppingCartTVC"];
-     
-     NSString *newBadgeValue = [viewController addItemToCart:self.productItem];
-     
      [[[[[self tabBarController] tabBar] items]
-       objectAtIndex:1] setBadgeValue:newBadgeValue];
+       objectAtIndex:1] setBadgeValue:[NSString stringWithFormat:@"%@", newBadgeValue]];
      
  }
 

@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShoppingCart.h"
+#import "ProductItem.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    ShoppingCart *shoppingCart;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+// Not sure if this is the right way to do
+@property ShoppingCart *shoppingCart;
+
+-(NSNumber*) addItemToShoppingCartDelegate:(ProductItem*) productItem;
 
 @end

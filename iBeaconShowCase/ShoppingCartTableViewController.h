@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ProductItem.h"
+#import "ShoppingCart.h"
 
 @interface ShoppingCartTableViewController : UITableViewController
+{
+    ShoppingCart* shoppingCart;
+}
 
--(NSString *)addItemToCart:(ProductItem *)productItem;
 
 @end

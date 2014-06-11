@@ -7,10 +7,9 @@
 //
 
 #import "ShoppingCartTableViewController.h"
+#import "AppDelegate.h"
 
 @interface ShoppingCartTableViewController ()
-
-@property NSMutableArray *productItemsCart;
 
 @end
 
@@ -34,30 +33,15 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    NSLog(@"loaded view");
-    NSLog(@"%lu", (unsigned long)[self.productItemsCart count]);
-    
+  
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    shoppingCart = appDelegate.shoppingCart;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-- (NSString *)addItemToCart:(ProductItem *)productItem
-{
-    
-    if (_productItemsCart == Nil) {
-        _productItemsCart = [[NSMutableArray alloc] init];
-    }
-    
-    [_productItemsCart addObject:productItem];
-    
-    return [NSString stringWithFormat:@"%lu", (unsigned long)[_productItemsCart count]];
-    
 }
 
 
@@ -70,7 +54,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.productItemsCart count];
+    return [shoppingCart.shoppingCartItems count];
 }
 
 
@@ -79,7 +63,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"productCell" forIndexPath:indexPath];
     
-    ProductItem *productItem = [self.productItemsCart objectAtIndex:indexPath.row];
+    ProductItem *productItem = [shoppingCart.shoppingCartItems objectAtIndex:indexPath.row];
     cell.textLabel.text = productItem.itemName;
     
     

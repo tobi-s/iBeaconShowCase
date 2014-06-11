@@ -10,6 +10,16 @@
 
 @implementation AppDelegate
 
+@synthesize shoppingCart;
+
+-(NSNumber *)addItemToShoppingCartDelegate:(ProductItem *)productItem
+{
+    if (shoppingCart == nil) {
+        shoppingCart = [[ShoppingCart alloc]init];
+    }
+    
+    return [shoppingCart addItemToCart:productItem];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -43,6 +43,7 @@
 		52B1B6C0194652CB005BE0A7 /* earl_grey_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6BF194652CB005BE0A7 /* earl_grey_tea.jpg */; };
 		52B1B6C2194652D0005BE0A7 /* chai_tea_latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6C1194652D0005BE0A7 /* chai_tea_latte.jpg */; };
 		52B1B6C519465551005BE0A7 /* PlaceOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */; };
+		52F78B6319482CFE00D07D0B /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F78B6219482CFE00D07D0B /* ShoppingCart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		52B1B6C1194652D0005BE0A7 /* chai_tea_latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chai_tea_latte.jpg; sourceTree = "<group>"; };
 		52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOrderViewController.h; sourceTree = "<group>"; };
 		52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOrderViewController.m; sourceTree = "<group>"; };
+		52F78B6119482CFE00D07D0B /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
+		52F78B6219482CFE00D07D0B /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,17 +163,9 @@
 		5299CC971945D24900D10EF5 /* iBeaconShowCase */ = {
 			isa = PBXGroup;
 			children = (
-				5299CCDA1945F09700D10EF5 /* AddItemTableViewController.h */,
-				5299CCDB1945F09700D10EF5 /* AddItemTableViewController.m */,
+				52F78B6519482D7100D07D0B /* controllers */,
+				52F78B6419482D5A00D07D0B /* classes */,
 				5299CCC01945D29300D10EF5 /* Main.storyboard */,
-				52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */,
-				52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */,
-				524B944E1947A36500EDB2F9 /* ShoppingCartTableViewController.h */,
-				524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */,
-				5299CCDD1945F3E900D10EF5 /* ProductsTableViewController.h */,
-				5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */,
-				5299CCE01945F5AB00D10EF5 /* ProductItem.h */,
-				5299CCE11945F5AB00D10EF5 /* ProductItem.m */,
 				5299CCA01945D24900D10EF5 /* AppDelegate.h */,
 				5299CCA11945D24900D10EF5 /* AppDelegate.m */,
 				5299CCA31945D24900D10EF5 /* Images.xcassets */,
@@ -232,6 +227,32 @@
 				5299CCC51945D7F700D10EF5 /* genting_starbucks_drinks.jpg */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		52F78B6419482D5A00D07D0B /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				52F78B6119482CFE00D07D0B /* ShoppingCart.h */,
+				52F78B6219482CFE00D07D0B /* ShoppingCart.m */,
+				5299CCE01945F5AB00D10EF5 /* ProductItem.h */,
+				5299CCE11945F5AB00D10EF5 /* ProductItem.m */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		52F78B6519482D7100D07D0B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5299CCDA1945F09700D10EF5 /* AddItemTableViewController.h */,
+				5299CCDB1945F09700D10EF5 /* AddItemTableViewController.m */,
+				52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */,
+				52B1B6C419465551005BE0A7 /* PlaceOrderViewController.m */,
+				524B944E1947A36500EDB2F9 /* ShoppingCartTableViewController.h */,
+				524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */,
+				5299CCDD1945F3E900D10EF5 /* ProductsTableViewController.h */,
+				5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +372,7 @@
 				5299CCDC1945F09700D10EF5 /* AddItemTableViewController.m in Sources */,
 				5299CCA21945D24900D10EF5 /* AppDelegate.m in Sources */,
 				5299CC9E1945D24900D10EF5 /* main.m in Sources */,
+				52F78B6319482CFE00D07D0B /* ShoppingCart.m in Sources */,
 				52B1B6C519465551005BE0A7 /* PlaceOrderViewController.m in Sources */,
 				524B94501947A36500EDB2F9 /* ShoppingCartTableViewController.m in Sources */,
 				5299CCDF1945F3E900D10EF5 /* ProductsTableViewController.m in Sources */,

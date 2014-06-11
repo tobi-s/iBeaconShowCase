@@ -39,6 +39,7 @@
 		52AA7EA51948FA03008D56B2 /* OrderCodeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7EA41948FA03008D56B2 /* OrderCodeTableViewController.m */; };
 		52AA7EA71948FF37008D56B2 /* qrcode_example_large_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AA7EA61948FF37008D56B2 /* qrcode_example_large_2.png */; };
 		52AA7EAA1948FF95008D56B2 /* OrderCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7EA91948FF95008D56B2 /* OrderCodeViewController.m */; };
+		52AA7EAF19491FE1008D56B2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7EAE19491FE1008D56B2 /* RootViewController.m */; };
 		52B1B6B419465027005BE0A7 /* caffe_latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B319465027005BE0A7 /* caffe_latte.jpg */; };
 		52B1B6B619465133005BE0A7 /* cappucino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B519465133005BE0A7 /* cappucino.jpg */; };
 		52B1B6B819465171005BE0A7 /* Espresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B719465171005BE0A7 /* Espresso.jpg */; };
@@ -105,6 +106,8 @@
 		52AA7EA61948FF37008D56B2 /* qrcode_example_large_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode_example_large_2.png; sourceTree = "<group>"; };
 		52AA7EA81948FF95008D56B2 /* OrderCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCodeViewController.h; sourceTree = "<group>"; };
 		52AA7EA91948FF95008D56B2 /* OrderCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCodeViewController.m; sourceTree = "<group>"; };
+		52AA7EAD19491FE1008D56B2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		52AA7EAE19491FE1008D56B2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		52B1B6B319465027005BE0A7 /* caffe_latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caffe_latte.jpg; sourceTree = "<group>"; };
 		52B1B6B519465133005BE0A7 /* cappucino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cappucino.jpg; sourceTree = "<group>"; };
 		52B1B6B719465171005BE0A7 /* Espresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Espresso.jpg; sourceTree = "<group>"; };
@@ -260,6 +263,8 @@
 		52F78B6519482D7100D07D0B /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52AA7EAD19491FE1008D56B2 /* RootViewController.h */,
+				52AA7EAE19491FE1008D56B2 /* RootViewController.m */,
 				5299CCDA1945F09700D10EF5 /* AddItemTableViewController.h */,
 				5299CCDB1945F09700D10EF5 /* AddItemTableViewController.m */,
 				52B1B6C319465551005BE0A7 /* PlaceOrderViewController.h */,
@@ -394,6 +399,7 @@
 			files = (
 				5299CCDC1945F09700D10EF5 /* AddItemTableViewController.m in Sources */,
 				5299CCA21945D24900D10EF5 /* AppDelegate.m in Sources */,
+				52AA7EAF19491FE1008D56B2 /* RootViewController.m in Sources */,
 				5299CC9E1945D24900D10EF5 /* main.m in Sources */,
 				52AA7EAA1948FF95008D56B2 /* OrderCodeViewController.m in Sources */,
 				52AA7EA21948F555008D56B2 /* OrderCode.m in Sources */,

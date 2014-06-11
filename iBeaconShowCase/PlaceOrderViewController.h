@@ -10,6 +10,10 @@
 #import "ProductItem.h"
 
 @interface PlaceOrderViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+{
+    ProductItem *productItem;
+    NSArray *priceList;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *productItemLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;

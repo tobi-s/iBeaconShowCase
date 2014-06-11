@@ -17,7 +17,7 @@
 @synthesize priceGrande;
 @synthesize priceVenti;
 
-- (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(NSNumber *)_itemSize andPriceTall:(NSNumber *)_priceTall andPriceGrande:(NSNumber *)_priceGrande andPriceVenti:(NSNumber *)_priceVenti{
+- (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(int *)_itemSize andPriceTall:(int *)_priceTall andPriceGrande:(int *)_priceGrande andPriceVenti:(int *)_priceVenti{
     self = [super init];
     if (self) {
                 itemName = _itemName;
@@ -34,16 +34,16 @@
 
 // Little ugly helpers....
 
-- (NSNumber *)currentItemSizePrice
+- (int)currentItemSizePrice
 {
-    NSNumber *itemSizePrice;
+    int itemSizePrice;
     
-    if (itemSize.intValue == 0) {
-        itemSizePrice = priceTall;
-    }else if (itemSize.intValue == 1){
-        itemSizePrice = priceGrande;
-    }else if (itemSize.intValue == 2){
-        itemSizePrice = priceVenti;
+    if (itemSize == (int *)0) {
+        itemSizePrice = (int)priceTall;
+    }else if (itemSize == (int *)1){
+        itemSizePrice = (int)priceGrande;
+    }else if (itemSize == (int *)2){
+        itemSizePrice = (int)priceVenti;
     }
     
     return itemSizePrice;
@@ -54,11 +54,11 @@
 {
     NSString *itemSizeLabel;
     
-    if (itemSize.intValue == 0) {
+    if (itemSize == 0) {
         itemSizeLabel = @"tall";
-    }else if (itemSize.intValue == 1){
+    }else if (itemSize == (int *)1){
         itemSizeLabel = @"grande";
-    }else if (itemSize.intValue == 2){
+    }else if (itemSize == (int *)2){
         itemSizeLabel = @"venti";
     }
     

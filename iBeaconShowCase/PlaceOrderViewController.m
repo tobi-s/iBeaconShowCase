@@ -13,8 +13,11 @@
 @interface PlaceOrderViewController ()
 @end
 
+
 @implementation PlaceOrderViewController
 
+@synthesize productItem;
+@synthesize priceList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,27 +32,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.productItemLabel.text = self.productItem.itemName;
+    self.productItemLabel.text = productItem.itemName;
     
     
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    imgView.image = [UIImage imageNamed:self.productItem.imageName];
+    imgView.image = [UIImage imageNamed:productItem.imageName];
     
     self.productImage.image = imgView.image;
+
+    NSMutableString *tallString = [[NSMutableString alloc] initWithFormat:@"tall %ld CHF", (long)productItem.priceTall];
+    NSMutableString *grandeString = [[NSMutableString alloc] initWithFormat: @"grande %ld CHF", (long)productItem.priceGrande];
+    NSMutableString *ventiString = [[NSMutableString alloc] initWithFormat: @"venti %ld CHF", (long)productItem.priceVenti];
+
     
-    NSMutableString *tallString = [[NSMutableString alloc] initWithString: @"tall "];
-    NSMutableString *grandeString = [[NSMutableString alloc] initWithString: @"grande "];
-    NSMutableString *ventiString = [[NSMutableString alloc] initWithString: @"venti "];
-    
-    [tallString appendString: self.productItem.priceTall.stringValue];
-    [grandeString appendString: self.productItem.priceGrande.stringValue];
-    [ventiString appendString: self.productItem.priceVenti.stringValue];
-    
-    [tallString appendString: @" CHF"];
-    [grandeString appendString: @" CHF"];
-    [ventiString appendString: @" CHF"];
-    
-    self.priceList = [[NSArray alloc] initWithObjects:tallString,grandeString, ventiString, nil];
+    priceList = [[NSArray alloc] initWithObjects:tallString,grandeString, ventiString, nil];
     
     [self.productSizePickerView selectRow:1 inComponent:0 animated:FALSE];
     
@@ -65,7 +61,7 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    NSNumber *newBadgeValue = [appDelegate addItemToShoppingCartDelegate:self.productItem];
+    NSNumber *newBadgeValue = [appDelegate addItemToShoppingCartDelegate:productItem];
     
     [[[[[self tabBarController] tabBar] items]
       objectAtIndex:1] setBadgeValue:[NSString stringWithFormat:@"%@", newBadgeValue]];
@@ -83,18 +79,18 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component
 {
-    return [self.priceList count];
+    return [priceList count];
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.priceList objectAtIndex:row];
+    return [priceList objectAtIndex:row];
     
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.productItem.itemSize = [[NSNumber alloc] initWithInteger:row];
+    productItem.itemSize = (int *)row;
 }
 
 

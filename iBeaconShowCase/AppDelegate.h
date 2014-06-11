@@ -9,17 +9,21 @@
 #import <UIKit/UIKit.h>
 #import "ShoppingCart.h"
 #import "ProductItem.h"
+#import "OrderCode.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
     ShoppingCart *shoppingCart;
+    NSMutableArray *orderCodes;
 }
 
 @property (strong, nonatomic) UIWindow *window;
 
 // Not sure if this is the right way to do
 @property ShoppingCart *shoppingCart;
+@property NSMutableArray *orderCodes;
 
 -(NSNumber*) addItemToShoppingCartDelegate:(ProductItem*) productItem;
+-(void) addOrderCodeDelegate:(OrderCode*) orderCode;
 
 @end

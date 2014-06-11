@@ -23,4 +23,20 @@
     return [[NSNumber alloc] initWithInteger:[shoppingCartItems count]];
 }
 
+-(NSString *)createBill
+{
+    NSMutableString *bill = [[NSMutableString alloc] init];
+    int total = 0;
+    
+    for (ProductItem *productItem in shoppingCartItems)
+    {
+        [bill appendFormat:@"1 x %@ (%@): %ld CHF\n",productItem.itemName, productItem.itemSizeLabel, (long)productItem.currentItemSizePrice];
+        total += productItem.currentItemSizePrice;
+    }
+    
+    [bill appendFormat:@"\ntotal: %d CHF", total];
+    
+    return bill;
+}
+
 @end

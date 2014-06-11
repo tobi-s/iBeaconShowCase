@@ -11,6 +11,7 @@
 @implementation AppDelegate
 
 @synthesize shoppingCart;
+@synthesize orderCodes;
 
 -(NSNumber *)addItemToShoppingCartDelegate:(ProductItem *)productItem
 {
@@ -19,6 +20,15 @@
     }
     
     return [shoppingCart addItemToCart:productItem];
+}
+
+-(void)addOrderCodeDelegate:(OrderCode *)orderCode
+{
+    if (orderCodes == nil) {
+        orderCodes = [[NSMutableArray alloc] init];
+    }
+    
+    [orderCodes addObject:orderCode];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

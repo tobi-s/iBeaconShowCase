@@ -16,5 +16,6 @@
 @property NSMutableArray* shoppingCartItems;
 
 -(NSNumber *)addItemToCart:(ProductItem *) productItem;
+-(NSString *)createBill;
 
 @end

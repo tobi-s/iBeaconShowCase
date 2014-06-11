@@ -61,11 +61,11 @@
 
 -(void)initProductData
 {
-    NSNumber *n1 = [NSNumber numberWithInt:8];
-    NSNumber *n2 = [NSNumber numberWithInt:10];
-    NSNumber *n3 = [NSNumber numberWithInt:12];
+    int *n1 = (int *)8;
+    int *n2 = (int *)10;
+    int *n3 = (int *)12;
     
-    NSNumber *n4 = [NSNumber numberWithInt:1];
+    int *n4 = (int *)1;
     
     NSMutableArray *array = [NSMutableArray new];
     

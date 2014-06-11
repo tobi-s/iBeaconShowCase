@@ -12,23 +12,23 @@
     
     NSString *itemName;
     NSString *imageName;
-    NSNumber *itemSize;
-    NSNumber *priceTall;
-    NSNumber *priceGrande;
-    NSNumber *priceVenti;
+    int *itemSize;
+    int *priceTall;
+    int *priceGrande;
+    int *priceVenti;
     
 }
 
 @property NSString *itemName;
 @property NSString *imageName;
-@property NSNumber *itemSize;
-@property NSNumber *priceTall;
-@property NSNumber *priceGrande;
-@property NSNumber *priceVenti;
+@property int *itemSize;
+@property int *priceTall;
+@property int *priceGrande;
+@property int *priceVenti;
 
-- (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(NSNumber *)_itemSize andPriceTall:(NSNumber *)_priceTall andPriceGrande:(NSNumber *)_priceGrande andPriceVenti:(NSNumber *)_priceVenti;
+- (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(int *)_itemSize andPriceTall:(int *)_priceTall andPriceGrande:(int *)_priceGrande andPriceVenti:(int *)_priceVenti;
 
 -(NSString *)itemSizeLabel;
--(NSNumber *)currentItemSizePrice;
+-(int)currentItemSizePrice;
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qui-ZC-2aE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SzG-4i-beh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -147,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5e-qD-Wvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="-255"/>
+            <point key="canvasLocation" x="2530" y="-255"/>
         </scene>
         <!--Add Item Table View Controller-->
         <scene sceneID="p8I-8O-ukq">
@@ -188,7 +188,106 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiZ-3v-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2616" y="-255"/>
+            <point key="canvasLocation" x="3142" y="-255"/>
+        </scene>
+        <!--Order Code Table View Controller - Order Codes-->
+        <scene sceneID="MoL-fC-8sV">
+            <objects>
+                <tableViewController id="Gyu-cA-FZ5" customClass="OrderCodeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="BMX-3c-yju">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="productCell" textLabel="T0c-hH-A4G" rowHeight="61" style="IBUITableViewCellStyleDefault" id="T9G-Dh-paZ">
+                                <rect key="frame" x="0.0" y="86" width="320" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T9G-Dh-paZ" id="ayD-gB-gMX">
+                                    <rect key="frame" x="0.0" y="0.0" width="273" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="258" id="T0c-hH-A4G">
+                                            <rect key="frame" x="15" y="0.0" width="258" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="FOG-Ga-wd3" kind="push" id="LFr-pi-sdF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gyu-cA-FZ5" id="8z4-Ol-ms1"/>
+                            <outlet property="delegate" destination="Gyu-cA-FZ5" id="OrD-y5-do9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Order Codes" id="KTk-tD-j1T"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fky-78-X6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="-1714"/>
+        </scene>
+        <!--Order Code View Controller-->
+        <scene sceneID="KOG-Os-fQZ">
+            <objects>
+                <viewController id="FOG-Ga-wd3" customClass="OrderCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FG5-7U-NmG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ylR-HP-c0n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kkK-uP-dUc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qrcode_example_large_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-0G-Vwl">
+                                <rect key="frame" x="33" y="118" width="254" height="253"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-lU-RYH">
+                                <rect key="frame" x="33" y="89" width="254" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="254" translatesAutoresizingMaskIntoConstraints="NO" id="OsW-vL-seC">
+                                <rect key="frame" x="33" y="387" width="254" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LkJ-TN-auL"/>
+                    <connections>
+                        <outlet property="detailLable" destination="OsW-vL-seC" id="WO0-gf-gve"/>
+                        <outlet property="titleLable" destination="aOv-lU-RYH" id="wLi-uL-o1U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iia-eo-vNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015" y="-1753"/>
+        </scene>
+        <!--Navigation Controller - order codes-->
+        <scene sceneID="bbb-xp-3WX">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="So7-NA-nNc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="order codes" image="document-7.png" id="6ck-yb-zAa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2X8-Hk-Hmt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gyu-cA-FZ5" kind="relationship" relationship="rootViewController" id="4ov-Km-ull"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWY-Ae-9se" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986" y="-1714"/>
         </scene>
         <!--Shopping Cart Table View Controller - Cart Items-->
         <scene sceneID="PEz-6w-T5S">
@@ -209,7 +308,7 @@
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" id="9IQ-em-PFG">
                                             <rect key="frame" x="15" y="0.0" width="290" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -223,12 +322,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Cart Items" id="k7M-fJ-w8H">
-                        <barButtonItem key="rightBarButtonItem" title="buy" id="Wgf-vK-xpM"/>
+                        <barButtonItem key="rightBarButtonItem" title="buy" id="Wgf-vK-xpM">
+                            <connections>
+                                <action selector="buyButtonClicked:" destination="LaC-KQ-d4M" id="Wa9-uK-wL7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="om4-wb-oqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530" y="-961"/>
+            <point key="canvasLocation" x="3056" y="-961"/>
         </scene>
         <!--Place Order View Controller-->
         <scene sceneID="KL0-ag-f19">
@@ -285,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv9-Vr-vEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3195" y="54"/>
+            <point key="canvasLocation" x="3721" y="54"/>
         </scene>
         <!--Navigation Controller - coffee and more-->
         <scene sceneID="ReZ-y5-9Py">
@@ -304,7 +407,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fb-rn-mCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="-266"/>
+            <point key="canvasLocation" x="2065" y="-266"/>
         </scene>
         <!--Navigation Controller - shopping-cart-->
         <scene sceneID="R7P-0w-rKX">
@@ -323,33 +426,36 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upB-4W-kd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="-995"/>
+            <point key="canvasLocation" x="2486" y="-995"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="VrM-R1-OWF">
+        <scene sceneID="uLv-1k-mc2">
             <objects>
-                <tabBarController storyboardIdentifier="tabBarC" automaticallyAdjustsScrollViewInsets="NO" id="qui-ZC-2aE" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SzG-4i-beh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="pzp-MZ-UHp">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="T8Y-7q-B54">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tGE-tc-6k7" kind="relationship" relationship="viewControllers" id="xPl-Fe-0dt"/>
-                        <segue destination="7wF-UN-Nvh" kind="relationship" relationship="viewControllers" id="h6V-po-3gY"/>
+                        <segue destination="tGE-tc-6k7" kind="relationship" relationship="viewControllers" id="fz4-JC-3yd"/>
+                        <segue destination="7wF-UN-Nvh" kind="relationship" relationship="viewControllers" id="f9k-53-pRN"/>
+                        <segue destination="So7-NA-nNc" kind="relationship" relationship="viewControllers" id="4HC-sC-OyV"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lGm-Vp-Yaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKh-Db-t4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="-614"/>
+            <point key="canvasLocation" x="1276" y="-1134"/>
         </scene>
     </scenes>
     <resources>
         <image name="Pumpkin_web.jpg" width="417" height="306"/>
         <image name="coffee-7.png" width="30" height="30"/>
+        <image name="document-7.png" width="30" height="30"/>
         <image name="genting_starbucks_drinks.jpg" width="1600" height="1200"/>
         <image name="mugs.jpg" width="225" height="225"/>
+        <image name="qrcode_example_large_2.png" width="1215" height="1215"/>
         <image name="refreshing_drinks.jpg" width="484" height="363"/>
         <image name="shopping-cart-7.png" width="30" height="30"/>
     </resources>

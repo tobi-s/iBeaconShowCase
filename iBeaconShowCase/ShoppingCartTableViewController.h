@@ -11,7 +11,7 @@
 #import "ShoppingCart.h"
 #import "AppDelegate.h"
 
-@interface ShoppingCartTableViewController : UITableViewController
+@interface ShoppingCartTableViewController : UITableViewController<UIAlertViewDelegate>
 {
     ShoppingCart* shoppingCart;
     AppDelegate *appDelegate;

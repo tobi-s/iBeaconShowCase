@@ -32,4 +32,38 @@
 }
 
 
+// Little ugly helpers....
+
+- (NSNumber *)currentItemSizePrice
+{
+    NSNumber *itemSizePrice;
+    
+    if (itemSize.intValue == 0) {
+        itemSizePrice = priceTall;
+    }else if (itemSize.intValue == 1){
+        itemSizePrice = priceGrande;
+    }else if (itemSize.intValue == 2){
+        itemSizePrice = priceVenti;
+    }
+    
+    return itemSizePrice;
+}
+
+
+-(NSString *)itemSizeLabel
+{
+    NSString *itemSizeLabel;
+    
+    if (itemSize.intValue == 0) {
+        itemSizeLabel = @"tall";
+    }else if (itemSize.intValue == 1){
+        itemSizeLabel = @"grande";
+    }else if (itemSize.intValue == 2){
+        itemSizeLabel = @"venti";
+    }
+    
+    return itemSizeLabel;
+}
+
+
 @end

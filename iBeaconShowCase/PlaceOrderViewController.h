@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *productSizePickerView;
 
 @property ProductItem *productItem;
+@property (weak, nonatomic) IBOutlet UIButton *addToCartButton;
 
 @property (strong, nonatomic) NSArray *priceList;
 

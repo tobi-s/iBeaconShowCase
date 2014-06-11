@@ -163,8 +163,8 @@
 		5299CC971945D24900D10EF5 /* iBeaconShowCase */ = {
 			isa = PBXGroup;
 			children = (
-				52F78B6519482D7100D07D0B /* controllers */,
-				52F78B6419482D5A00D07D0B /* classes */,
+				52F78B6519482D7100D07D0B /* viewControllers */,
+				52F78B6419482D5A00D07D0B /* objects */,
 				5299CCC01945D29300D10EF5 /* Main.storyboard */,
 				5299CCA01945D24900D10EF5 /* AppDelegate.h */,
 				5299CCA11945D24900D10EF5 /* AppDelegate.m */,
@@ -229,7 +229,7 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		52F78B6419482D5A00D07D0B /* classes */ = {
+		52F78B6419482D5A00D07D0B /* objects */ = {
 			isa = PBXGroup;
 			children = (
 				52F78B6119482CFE00D07D0B /* ShoppingCart.h */,
@@ -237,10 +237,10 @@
 				5299CCE01945F5AB00D10EF5 /* ProductItem.h */,
 				5299CCE11945F5AB00D10EF5 /* ProductItem.m */,
 			);
-			name = classes;
+			name = objects;
 			sourceTree = "<group>";
 		};
-		52F78B6519482D7100D07D0B /* controllers */ = {
+		52F78B6519482D7100D07D0B /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				5299CCDA1945F09700D10EF5 /* AddItemTableViewController.h */,
@@ -252,7 +252,7 @@
 				5299CCDD1945F3E900D10EF5 /* ProductsTableViewController.h */,
 				5299CCDE1945F3E900D10EF5 /* ProductsTableViewController.m */,
 			);
-			name = controllers;
+			name = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

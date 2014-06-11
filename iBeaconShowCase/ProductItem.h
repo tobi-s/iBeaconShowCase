@@ -28,4 +28,7 @@
 
 - (id)initWithContent:(NSString *)_itemName andImage:(NSString *)_imageName andSize:(NSNumber *)_itemSize andPriceTall:(NSNumber *)_priceTall andPriceGrande:(NSNumber *)_priceGrande andPriceVenti:(NSNumber *)_priceVenti;
 
+-(NSString *)itemSizeLabel;
+-(NSNumber *)currentItemSizePrice;
+
 @end

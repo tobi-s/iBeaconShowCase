@@ -60,6 +60,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)addToCartButton:(id)sender {
+    
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    NSNumber *newBadgeValue = [appDelegate addItemToShoppingCartDelegate:self.productItem];
+    
+    [[[[[self tabBarController] tabBar] items]
+      objectAtIndex:1] setBadgeValue:[NSString stringWithFormat:@"%@", newBadgeValue]];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 
 // Picker View
 
@@ -83,23 +96,6 @@
 {
     self.productItem.itemSize = [[NSNumber alloc] initWithInteger:row];
 }
-
-
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
-     
-     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-     
-     NSNumber *newBadgeValue = [appDelegate addItemToShoppingCartDelegate:self.productItem];
-
-     [[[[[self tabBarController] tabBar] items]
-       objectAtIndex:1] setBadgeValue:[NSString stringWithFormat:@"%@", newBadgeValue]];
-     
- }
 
 
 

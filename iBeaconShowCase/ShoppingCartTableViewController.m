@@ -53,6 +53,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    
     return [shoppingCart.shoppingCartItems count];
 }
 
@@ -66,15 +67,14 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"productCell" forIndexPath:indexPath];
     
-    ProductItem *productItem = [shoppingCart.shoppingCartItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = productItem.itemName;
-    
-    
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    imgView.image = [UIImage imageNamed:productItem.imageName];
-    
-    cell.imageView.image = imgView.image;
-    
+    // Default procedure in the if and in the else if shoppingcart is empty
+  
+        ProductItem *productItem = [shoppingCart.shoppingCartItems objectAtIndex:indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"1 x %@ (%@):\n%@ CHF",productItem.itemName, productItem.itemSizeLabel, productItem.currentItemSizePrice];
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+        imgView.image = [UIImage imageNamed:productItem.imageName];
+        cell.imageView.image = imgView.image;
+
     return cell;
 }
 
@@ -84,8 +84,13 @@
     
     NSString *newBadgeValue = [NSString stringWithFormat:@"%lu", (unsigned long)[shoppingCart.shoppingCartItems count]];
     
+    if ([newBadgeValue  isEqual: @"0"]) {
+        newBadgeValue = nil;
+    }
+    
     [[[[[self tabBarController] tabBar] items]
       objectAtIndex:1] setBadgeValue:newBadgeValue];
+    
     [tableView reloadData];
 }
 

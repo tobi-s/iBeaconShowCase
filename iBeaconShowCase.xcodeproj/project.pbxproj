@@ -40,6 +40,10 @@
 		52AA7EA71948FF37008D56B2 /* qrcode_example_large_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AA7EA61948FF37008D56B2 /* qrcode_example_large_2.png */; };
 		52AA7EAA1948FF95008D56B2 /* OrderCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7EA91948FF95008D56B2 /* OrderCodeViewController.m */; };
 		52AA7EAF19491FE1008D56B2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7EAE19491FE1008D56B2 /* RootViewController.m */; };
+		52AA7EB1194921DC008D56B2 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA7EB0194921DC008D56B2 /* libEstimoteSDK.a */; };
+		52AA7EB3194921EA008D56B2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA7EB2194921EA008D56B2 /* CoreBluetooth.framework */; };
+		52AA7EB5194921F2008D56B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA7EB4194921F2008D56B2 /* CoreLocation.framework */; };
+		52AA7EB7194921FB008D56B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA7EB6194921FB008D56B2 /* SystemConfiguration.framework */; };
 		52B1B6B419465027005BE0A7 /* caffe_latte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B319465027005BE0A7 /* caffe_latte.jpg */; };
 		52B1B6B619465133005BE0A7 /* cappucino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B519465133005BE0A7 /* cappucino.jpg */; };
 		52B1B6B819465171005BE0A7 /* Espresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52B1B6B719465171005BE0A7 /* Espresso.jpg */; };
@@ -108,6 +112,10 @@
 		52AA7EA91948FF95008D56B2 /* OrderCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCodeViewController.m; sourceTree = "<group>"; };
 		52AA7EAD19491FE1008D56B2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		52AA7EAE19491FE1008D56B2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		52AA7EB0194921DC008D56B2 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEstimoteSDK.a; path = EstimoteSDK/libEstimoteSDK.a; sourceTree = "<group>"; };
+		52AA7EB2194921EA008D56B2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		52AA7EB4194921F2008D56B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		52AA7EB6194921FB008D56B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		52B1B6B319465027005BE0A7 /* caffe_latte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caffe_latte.jpg; sourceTree = "<group>"; };
 		52B1B6B519465133005BE0A7 /* cappucino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cappucino.jpg; sourceTree = "<group>"; };
 		52B1B6B719465171005BE0A7 /* Espresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Espresso.jpg; sourceTree = "<group>"; };
@@ -127,6 +135,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AA7EB1194921DC008D56B2 /* libEstimoteSDK.a in Frameworks */,
+				52AA7EB7194921FB008D56B2 /* SystemConfiguration.framework in Frameworks */,
+				52AA7EB5194921F2008D56B2 /* CoreLocation.framework in Frameworks */,
+				52AA7EB3194921EA008D56B2 /* CoreBluetooth.framework in Frameworks */,
 				5299CC941945D24900D10EF5 /* CoreGraphics.framework in Frameworks */,
 				5299CC961945D24900D10EF5 /* UIKit.framework in Frameworks */,
 				5299CC921945D24900D10EF5 /* Foundation.framework in Frameworks */,
@@ -168,6 +180,10 @@
 		5299CC901945D24900D10EF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52AA7EB6194921FB008D56B2 /* SystemConfiguration.framework */,
+				52AA7EB4194921F2008D56B2 /* CoreLocation.framework */,
+				52AA7EB2194921EA008D56B2 /* CoreBluetooth.framework */,
+				52AA7EB0194921DC008D56B2 /* libEstimoteSDK.a */,
 				5299CC911945D24900D10EF5 /* Foundation.framework */,
 				5299CC931945D24900D10EF5 /* CoreGraphics.framework */,
 				5299CC951945D24900D10EF5 /* UIKit.framework */,
@@ -527,7 +543,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeaconShowCase/iBeaconShowCase-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/EstimoteSDK/Headers",
+				);
 				INFOPLIST_FILE = "iBeaconShowCase/iBeaconShowCase-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -540,7 +565,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeaconShowCase/iBeaconShowCase-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/EstimoteSDK/Headers",
+				);
 				INFOPLIST_FILE = "iBeaconShowCase/iBeaconShowCase-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,8 +7,15 @@
 //
 
 #import "RootViewController.h"
+#import "ESTBeaconManager.h"
+#import "ESTBeaconRegion.h"
+#import "ESTBeacon.h"
 
-@interface RootViewController ()
+@interface RootViewController () <ESTBeaconManagerDelegate>
+
+@property (nonatomic, strong) ESTBeaconManager *beaconManager;
+@property (nonatomic, strong) ESTBeaconRegion *beaconRegion;
+@property (nonatomic, strong) ESTBeacon         *beacon;
 
 @end
 
@@ -27,6 +34,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,25 +44,34 @@
 }
 - (IBAction)startButton:(id)sender {
     
+    self.beaconManager = [[ESTBeaconManager alloc] init];
+    self.beaconManager.delegate = self;
     
+    self.beaconRegion = [[ESTBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]
+                                                            major:[self.beacon.major unsignedIntValue]
+                                                            minor:[self.beacon.minor unsignedIntValue]
+                                                            identifier:@"EstimoteSampleRegion"];
     
+    self.beaconRegion.notifyOnEntry = TRUE;
+    self.beaconRegion.notifyEntryStateOnDisplay = TRUE;
     
-    
-    
-    
-    
-    
+    [self.beaconManager startMonitoringForRegion:self.beaconRegion];
+
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+    
+- (void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.alertAction = @"Starbucks coffee 20% off";
+    localNotification.alertBody = @"Your favorite coffee 20% off today - buy now and pick up at Starbucks!";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+        
+    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
 }
-*/
+
+
+    
+
 
 @end

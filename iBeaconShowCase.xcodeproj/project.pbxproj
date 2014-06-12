@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		522B6FF81947202A00BEC85A /* cups_sizes.png in Resources */ = {isa = PBXBuildFile; fileRef = 522B6FF71947202A00BEC85A /* cups_sizes.png */; };
+		523C45CC194975B300EB777D /* 390px-Starbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 523C45CB194975B300EB777D /* 390px-Starbucks.png */; };
+		523C45CE194975E800EB777D /* SBB_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 523C45CD194975E800EB777D /* SBB_Logo.png */; };
+		523C45D01949761100EB777D /* stepmother-starbucks_coffee_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 523C45CF1949761100EB777D /* stepmother-starbucks_coffee_1.png */; };
 		524B94501947A36500EDB2F9 /* ShoppingCartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */; };
 		526C9D7B1948D64600F5C76E /* document-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 526C9D7A1948D64600F5C76E /* document-7@2x.png */; };
 		5299CC921945D24900D10EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299CC911945D24900D10EF5 /* Foundation.framework */; };
@@ -68,6 +71,9 @@
 
 /* Begin PBXFileReference section */
 		522B6FF71947202A00BEC85A /* cups_sizes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups_sizes.png; sourceTree = "<group>"; };
+		523C45CB194975B300EB777D /* 390px-Starbucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "390px-Starbucks.png"; path = "../../../../Documents/HWZ/SBB Prototype/390px-Starbucks.png"; sourceTree = "<group>"; };
+		523C45CD194975E800EB777D /* SBB_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SBB_Logo.png; path = "../../../../Documents/HWZ/SBB Prototype/SBB_Logo.png"; sourceTree = "<group>"; };
+		523C45CF1949761100EB777D /* stepmother-starbucks_coffee_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stepmother-starbucks_coffee_1.png"; path = "../../../../Documents/HWZ/SBB Prototype/stepmother-starbucks_coffee_1.png"; sourceTree = "<group>"; };
 		524B944E1947A36500EDB2F9 /* ShoppingCartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartTableViewController.h; sourceTree = "<group>"; };
 		524B944F1947A36500EDB2F9 /* ShoppingCartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartTableViewController.m; sourceTree = "<group>"; };
 		526C9D7A1948D64600F5C76E /* document-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "document-7@2x.png"; sourceTree = "<group>"; };
@@ -239,6 +245,9 @@
 		5299CCC21945D78200D10EF5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				523C45CF1949761100EB777D /* stepmother-starbucks_coffee_1.png */,
+				523C45CD194975E800EB777D /* SBB_Logo.png */,
+				523C45CB194975B300EB777D /* 390px-Starbucks.png */,
 				52AA7EA61948FF37008D56B2 /* qrcode_example_large_2.png */,
 				526C9D7A1948D64600F5C76E /* document-7@2x.png */,
 				522B6FF71947202A00BEC85A /* cups_sizes.png */,
@@ -381,6 +390,7 @@
 				522B6FF81947202A00BEC85A /* cups_sizes.png in Resources */,
 				5299CCD41945E70900D10EF5 /* shopping-cart-7@2x.png in Resources */,
 				5299CC9C1945D24900D10EF5 /* InfoPlist.strings in Resources */,
+				523C45CC194975B300EB777D /* 390px-Starbucks.png in Resources */,
 				5299CCD21945E55100D10EF5 /* cart.png in Resources */,
 				52B1B6BA194651A1005BE0A7 /* vanilla_latte.jpg in Resources */,
 				5299CCCE1945DBF600D10EF5 /* refreshing_drinks.jpg in Resources */,
@@ -391,6 +401,8 @@
 				5299CCC81945D84100D10EF5 /* lemon_green_tea.jpg in Resources */,
 				5299CCCA1945D89200D10EF5 /* Refreshers-2.jpg in Resources */,
 				5299CCA41945D24900D10EF5 /* Images.xcassets in Resources */,
+				523C45CE194975E800EB777D /* SBB_Logo.png in Resources */,
+				523C45D01949761100EB777D /* stepmother-starbucks_coffee_1.png in Resources */,
 				5299CCCC1945D93100D10EF5 /* Pumpkin_web.jpg in Resources */,
 				52B1B6BE19465294005BE0A7 /* chai_tea.jpg in Resources */,
 				52AA7EA71948FF37008D56B2 /* qrcode_example_large_2.png in Resources */,

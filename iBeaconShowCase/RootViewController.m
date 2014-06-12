@@ -35,6 +35,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    self.beaconManager = [[ESTBeaconManager alloc] init];
+    self.beaconManager.delegate = self;
+    
+    self.beaconRegion = [[ESTBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]
+                                                            identifier:@"EstimoteSampleRegion"];
+    
+    self.beaconRegion.notifyOnEntry = TRUE;
+    self.beaconRegion.notifyOnExit = TRUE;
+
+    
+    [self.beaconManager startMonitoringForRegion:self.beaconRegion];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,23 +56,14 @@
 }
 - (IBAction)startButton:(id)sender {
     
-    self.beaconManager = [[ESTBeaconManager alloc] init];
-    self.beaconManager.delegate = self;
-    
-    self.beaconRegion = [[ESTBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]
-                                                            major:[self.beacon.major unsignedIntValue]
-                                                            minor:[self.beacon.minor unsignedIntValue]
-                                                            identifier:@"EstimoteSampleRegion"];
-    
-    self.beaconRegion.notifyOnEntry = TRUE;
-    self.beaconRegion.notifyEntryStateOnDisplay = TRUE;
-    
-    [self.beaconManager startMonitoringForRegion:self.beaconRegion];
+
 
 }
     
 - (void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
 {
+    NSLog(@"Enter region.");
+    
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
     localNotification.alertAction = @"Starbucks coffee 20% off";
     localNotification.alertBody = @"Your favorite coffee 20% off today - buy now and pick up at Starbucks!";
@@ -70,6 +73,10 @@
     [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
 }
 
+- (void)beaconManager:(ESTBeaconManager *)manager didExitRegion:(ESTBeaconRegion *)region
+{
+    NSLog(@"Exit region.");
+}
 
     
 

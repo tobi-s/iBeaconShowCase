@@ -441,16 +441,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-vu-Tvk">
-                                <rect key="frame" x="76" y="269" width="168" height="30"/>
+                                <rect key="frame" x="31" y="496" width="259" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="start demo">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="press here and order now!"/>
                                 <connections>
                                     <action selector="startButton:" destination="a0T-wx-GxL" eventType="touchUpInside" id="kyn-ZW-xab"/>
                                     <segue destination="SzG-4i-beh" kind="modal" id="S0X-HJ-L60"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stepmother-starbucks_coffee_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lqY-Fh-3aD">
+                                <rect key="frame" x="35" y="260" width="244" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SBB_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tWz-va-I9C">
+                                <rect key="frame" x="70" y="52" width="180" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your favorite coffee today 20% off!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4c-cw-qem">
+                                <rect key="frame" x="34" y="116" width="266" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="381" translatesAutoresizingMaskIntoConstraints="NO" id="w6N-c4-xSM">
+                                <rect key="frame" x="-23" y="163" width="381" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Order now and pick your coffee up 
+Starbucks in SBB Zürich HB Railcity.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -482,6 +503,7 @@
     </scenes>
     <resources>
         <image name="Pumpkin_web.jpg" width="417" height="306"/>
+        <image name="SBB_Logo.png" width="471" height="49"/>
         <image name="coffee-7.png" width="30" height="30"/>
         <image name="document-7.png" width="30" height="30"/>
         <image name="genting_starbucks_drinks.jpg" width="1600" height="1200"/>
@@ -489,6 +511,7 @@
         <image name="qrcode_example_large_2.png" width="1215" height="1215"/>
         <image name="refreshing_drinks.jpg" width="484" height="363"/>
         <image name="shopping-cart-7.png" width="30" height="30"/>
+        <image name="stepmother-starbucks_coffee_1.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
